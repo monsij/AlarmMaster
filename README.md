@@ -17,8 +17,11 @@ A sleek iOS alarm app with a **master kill switch** to turn off all alarms insta
 
 ## Screenshots
 
+Screenshots of the app can be found in the [`screenshots/`](./screenshots/) folder.
+
 The app features a sleek dark interface with:
 - A prominent master toggle at the top
+- Weather bar showing today's weather, sunrise time, and tomorrow's forecast
 - Clean alarm cards with swipe-to-delete
 - Beautiful graphical date picker
 - Smooth animations throughout
