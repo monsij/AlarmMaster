@@ -136,6 +136,7 @@ struct AlarmActiveView: View {
 
 struct ContentView: View {
     @EnvironmentObject var alarmManager: AlarmManager
+    @StateObject private var weatherService = WeatherService()
     @State private var showingAddAlarm = false
     @State private var killButtonScale: CGFloat = 1.0
     @State private var killButtonRotation: Double = 0
@@ -159,9 +160,14 @@ struct ContentView: View {
                     .ignoresSafeArea()
                     
                     VStack(spacing: 0) {
-                        masterToggleSection
+                        // Weather bar at the top
+                        WeatherBarView(weatherService: weatherService)
                             .padding(.horizontal, 20)
                             .padding(.top, 10)
+                        
+                        masterToggleSection
+                            .padding(.horizontal, 20)
+                            .padding(.top, 12)
                         
                         if alarmManager.alarms.isEmpty {
                             emptyStateView
@@ -170,6 +176,12 @@ struct ContentView: View {
                         }
                         
                         Spacer(minLength: 0)
+                        
+                        // Faded attribution note at the bottom
+                        Text("Made with ❤️ by Cursor AI")
+                            .font(.system(size: 11, weight: .regular))
+                            .foregroundStyle(textSecondary.opacity(0.4))
+                            .padding(.bottom, 20)
                     }
                 }
                 .navigationTitle("Alarms")
@@ -209,6 +221,9 @@ struct ContentView: View {
             }
         }
         .animation(.spring(response: 0.4, dampingFraction: 0.8), value: alarmManager.isAlarmRinging)
+        .onAppear {
+            weatherService.requestLocationAndFetchWeather()
+        }
     }
     
     private var masterToggleSection: some View {

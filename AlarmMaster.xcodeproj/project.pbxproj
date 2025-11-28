@@ -3,15 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00B0A9F3CC175120D4A5B788 /* Config.plist.example in Resources */ = {isa = PBXBuildFile; fileRef = 01882439BA2862D3C29D7F7B /* Config.plist.example */; };
 		0ABB6C86C88A5918077D0BCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4071EA9D3BE95CA8DD01847C /* Assets.xcassets */; };
 		2EDBB36FF154878BA3A16F6D /* AlarmMasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F255BD4E367DA6443AE6B6 /* AlarmMasterApp.swift */; };
+		5738DBA1802DF8EE1DA15BDD /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BE8128A7EA137FEFF46645 /* Weather.swift */; };
+		5BF7857CC78ED33E0BD73E89 /* WeatherBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF3D7C5C702F2AE96520B0F /* WeatherBarView.swift */; };
+		5FEFA45F1D12528A0883BE2B /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 786BA0975BAE1EA32EBC30D1 /* Config.plist */; };
 		7F5664C87AC408FC8C60B2FD /* notification_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3833B37994E278C476CB1E83 /* notification_icon.png */; };
 		A486CAECD1DEE77AC7829092 /* AddAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E64DD99CE571BED109D1F2 /* AddAlarmView.swift */; };
 		A9B78AFFBD6865807883A101 /* AlarmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00756B1354D54779D0A2CF83 /* AlarmManager.swift */; };
+		ADBA6112DFCA898328197379 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19BFFFCD3C259AB40E61C42 /* WeatherService.swift */; };
 		B3372B03EFF6752AA0969DF3 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AAD297246E4A15AE780C2A /* Alarm.swift */; };
 		D02AD5122CB4E99AF856E6AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B484270A498ECB34D0390 /* ContentView.swift */; };
 		DAB09C569CAAED5FE88D3DBB /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 30042DCAB32B288FF8D2B622 /* alarm_sound.mp3 */; };
@@ -20,15 +25,20 @@
 
 /* Begin PBXFileReference section */
 		00756B1354D54779D0A2CF83 /* AlarmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManager.swift; sourceTree = "<group>"; };
+		01882439BA2862D3C29D7F7B /* Config.plist.example */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Config.plist.example; sourceTree = "<group>"; };
 		1E74E356563CB1458F877828 /* AlarmRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmRowView.swift; sourceTree = "<group>"; };
 		30042DCAB32B288FF8D2B622 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 		3833B37994E278C476CB1E83 /* notification_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notification_icon.png; sourceTree = "<group>"; };
 		4071EA9D3BE95CA8DD01847C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		562D5A5C05FABCD843F3BA5B /* AlarmMaster.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = AlarmMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		562D5A5C05FABCD843F3BA5B /* AlarmMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		786BA0975BAE1EA32EBC30D1 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Config.plist; sourceTree = "<group>"; };
 		88F255BD4E367DA6443AE6B6 /* AlarmMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmMasterApp.swift; sourceTree = "<group>"; };
 		90AAD297246E4A15AE780C2A /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 		A4E64DD99CE571BED109D1F2 /* AddAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmView.swift; sourceTree = "<group>"; };
 		AD0D62CCFE29C4B4F348DD62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B0BE8128A7EA137FEFF46645 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		D19BFFFCD3C259AB40E61C42 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		EFF3D7C5C702F2AE96520B0F /* WeatherBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherBarView.swift; sourceTree = "<group>"; };
 		F92B484270A498ECB34D0390 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +57,8 @@
 				30042DCAB32B288FF8D2B622 /* alarm_sound.mp3 */,
 				88F255BD4E367DA6443AE6B6 /* AlarmMasterApp.swift */,
 				4071EA9D3BE95CA8DD01847C /* Assets.xcassets */,
+				786BA0975BAE1EA32EBC30D1 /* Config.plist */,
+				01882439BA2862D3C29D7F7B /* Config.plist.example */,
 				AD0D62CCFE29C4B4F348DD62 /* Info.plist */,
 				3833B37994E278C476CB1E83 /* notification_icon.png */,
 				5B5570019BF68DEB2E751B0B /* Models */,
@@ -60,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				90AAD297246E4A15AE780C2A /* Alarm.swift */,
+				B0BE8128A7EA137FEFF46645 /* Weather.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -70,6 +83,7 @@
 				A4E64DD99CE571BED109D1F2 /* AddAlarmView.swift */,
 				1E74E356563CB1458F877828 /* AlarmRowView.swift */,
 				F92B484270A498ECB34D0390 /* ContentView.swift */,
+				EFF3D7C5C702F2AE96520B0F /* WeatherBarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -78,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				00756B1354D54779D0A2CF83 /* AlarmManager.swift */,
+				D19BFFFCD3C259AB40E61C42 /* WeatherService.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -135,7 +150,6 @@
 			);
 			mainGroup = 3DA93A858CB439ACEE5D5241;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -150,6 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ABB6C86C88A5918077D0BCB /* Assets.xcassets in Resources */,
+				5FEFA45F1D12528A0883BE2B /* Config.plist in Resources */,
+				00B0A9F3CC175120D4A5B788 /* Config.plist.example in Resources */,
 				DAB09C569CAAED5FE88D3DBB /* alarm_sound.mp3 in Resources */,
 				7F5664C87AC408FC8C60B2FD /* notification_icon.png in Resources */,
 			);
@@ -168,6 +184,9 @@
 				2EDBB36FF154878BA3A16F6D /* AlarmMasterApp.swift in Sources */,
 				E798DFFAC32E71D6F12346E6 /* AlarmRowView.swift in Sources */,
 				D02AD5122CB4E99AF856E6AB /* ContentView.swift in Sources */,
+				5738DBA1802DF8EE1DA15BDD /* Weather.swift in Sources */,
+				5BF7857CC78ED33E0BD73E89 /* WeatherBarView.swift in Sources */,
+				ADBA6112DFCA898328197379 /* WeatherService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +199,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZ3A6R2U94;
 				INFOPLIST_FILE = AlarmMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -272,6 +292,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PZ3A6R2U94;
 				INFOPLIST_FILE = AlarmMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

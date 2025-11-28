@@ -97,6 +97,20 @@ The app uses `UNUserNotificationCenter` to schedule local notifications that act
 ### Persistence
 Alarms are stored in `UserDefaults` using `Codable` serialization, so they persist between app launches.
 
+## Weather Feature Setup
+
+The app includes a weather bar showing temperature and precipitation chance. To enable it:
+
+1. Get a free API key from [OpenWeatherMap](https://openweathermap.org/api) (free tier available)
+2. Create a `Config.plist` file in the `AlarmMaster/` folder:
+   - Copy `Config.plist.example` to `Config.plist`
+   - Replace `YOUR_API_KEY_HERE` with your actual API key
+3. Add `Config.plist` to your Xcode project (make sure it's included in the target)
+
+**Alternative:** You can also directly edit `WeatherService.swift` and replace `"YOUR_API_KEY_HERE"` with your API key (line 21).
+
+**Note:** `Config.plist` is gitignored to keep your API key private.
+
 ## Requirements
 
 - iOS 16.0+

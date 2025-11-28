@@ -35,6 +35,7 @@ targets:
       path: AlarmMaster/Info.plist
       properties:
         NSUserNotificationsUsageDescription: "Alarm Master needs notification permissions to alert you when your alarms go off."
+        NSLocationWhenInUseUsageDescription: "Alarm Master needs your location to show current weather information."
         UIBackgroundModes:
           - fetch
           - processing

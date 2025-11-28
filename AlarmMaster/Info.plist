@@ -18,6 +18,8 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Alarm Master needs your location to show current weather information.</string>
 	<key>NSUserNotificationsUsageDescription</key>
 	<string>Alarm Master needs notification permissions to alert you when your alarms go off.</string>
 	<key>UIBackgroundModes</key>
