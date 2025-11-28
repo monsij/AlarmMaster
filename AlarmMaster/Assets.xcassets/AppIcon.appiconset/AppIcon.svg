@@ -1,0 +1,90 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Clean white/light -->
+    <linearGradient id="cleanWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#f1f5f9"/>
+    </linearGradient>
+    
+    <!-- Vibrant orange -->
+    <linearGradient id="vibrantOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fb923c"/>
+      <stop offset="100%" style="stop-color:#ea580c"/>
+    </linearGradient>
+    
+    <filter id="orangeGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background - clean white -->
+  <rect width="1024" height="1024" rx="224" fill="url(#cleanWhite)"/>
+  
+  <!-- Subtle pattern -->
+  <g fill="#f97316" opacity="0.03">
+    <circle cx="200" cy="200" r="150"/>
+    <circle cx="824" cy="824" r="200"/>
+    <circle cx="800" cy="250" r="100"/>
+  </g>
+  
+  <!-- Main alarm clock - bold and simple -->
+  <g transform="translate(512, 512)" filter="url(#orangeGlow)">
+    <!-- Clock body -->
+    <circle cx="0" cy="0" r="220" fill="url(#vibrantOrange)"/>
+    
+    <!-- Clock face (white inset) -->
+    <circle cx="0" cy="0" r="175" fill="url(#cleanWhite)"/>
+    
+    <!-- Hour markers -->
+    <g fill="url(#vibrantOrange)">
+      <rect x="-9" y="-165" width="18" height="35" rx="9"/>
+      <rect x="-9" y="130" width="18" height="35" rx="9"/>
+      <rect x="-165" y="-9" width="35" height="18" rx="9"/>
+      <rect x="130" y="-9" width="35" height="18" rx="9"/>
+    </g>
+    
+    <!-- Small hour markers -->
+    <g fill="url(#vibrantOrange)" opacity="0.5">
+      <circle cx="82" cy="-142" r="7"/>
+      <circle cx="142" cy="-82" r="7"/>
+      <circle cx="142" cy="82" r="7"/>
+      <circle cx="82" cy="142" r="7"/>
+      <circle cx="-82" cy="142" r="7"/>
+      <circle cx="-142" cy="82" r="7"/>
+      <circle cx="-142" cy="-82" r="7"/>
+      <circle cx="-82" cy="-142" r="7"/>
+    </g>
+    
+    <!-- Clock hands -->
+    <line x1="0" y1="10" x2="0" y2="-100" stroke="url(#vibrantOrange)" stroke-width="16" stroke-linecap="round"/>
+    <line x1="0" y1="10" x2="65" y2="40" stroke="url(#vibrantOrange)" stroke-width="12" stroke-linecap="round"/>
+    
+    <!-- Center dot -->
+    <circle cx="0" cy="0" r="18" fill="url(#vibrantOrange)"/>
+    <circle cx="0" cy="0" r="9" fill="url(#cleanWhite)"/>
+    
+    <!-- Bells -->
+    <ellipse cx="-145" cy="-175" rx="60" ry="50" fill="url(#vibrantOrange)"/>
+    <ellipse cx="145" cy="-175" rx="60" ry="50" fill="url(#vibrantOrange)"/>
+    
+    <!-- Bell hammer -->
+    <rect x="-12" y="-265" width="24" height="70" rx="12" fill="url(#vibrantOrange)"/>
+    <circle cx="0" cy="-270" r="26" fill="url(#vibrantOrange)"/>
+    
+    <!-- Legs -->
+    <rect x="-190" y="185" width="24" height="80" rx="12" fill="url(#vibrantOrange)" transform="rotate(-20 -190 185)"/>
+    <rect x="166" y="185" width="24" height="80" rx="12" fill="url(#vibrantOrange)" transform="rotate(20 190 185)"/>
+    
+    <!-- Master badge -->
+    <g transform="translate(155, 110)">
+      <circle cx="0" cy="0" r="50" fill="url(#vibrantOrange)" stroke="url(#cleanWhite)" stroke-width="6"/>
+      <text x="0" y="10" font-family="SF Pro Display, -apple-system, Helvetica" 
+            font-size="32" font-weight="800" fill="#fff" 
+            text-anchor="middle">M</text>
+    </g>
+  </g>
+</svg>
